@@ -2,27 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Servico;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
-        return view('home');
+        $valorMes = DB::table('servicos')->whereMonth('created_at', date('m'))->sum('valor');
+        $valorAno = DB::table('servicos')->whereYear('created_at', date('Y'))->sum('valor');
+
+        return view('home', compact('valorMes', 'valorAno'));
     }
 }

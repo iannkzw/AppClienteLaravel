@@ -23,8 +23,8 @@
     <div class="col-12" id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-black" href="{{ url('/cliente') }}">
-                   WM Toldos Admin
+                <a class="navbar-brand text-secondary" href="{{ url('/cliente') }}">
+                  AppClient <span class="material-icons">trending_up</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

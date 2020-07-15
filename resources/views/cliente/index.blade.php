@@ -2,7 +2,7 @@
 
 @section('content')
     <div class=".bg-dark">
-        <h2 class="text-center mb-5">Painel de clientes</h2>
+        <h2 class="text-center text-secondary mb-5">Painel de clientes <span class="material-icons">group</span></h2>
 
         <div class="row">
             <div class="col-md-12 ">
