@@ -1,43 +1,41 @@
 @extends('layouts.app')
 
 @section('content')
-<h2 class="text-center text-secondary mb-5">Dashboard <span class="material-icons">work</span></h2>
-<div class="container">
-    <div class="row col-10 offset-1">
-        <div class="card bg-light mr-5" style="width:23rem;">
-            <div class="card-header text-secondary"><h4>Receita mensal</h4></div>
-            <div class="card-body">
-                <p class="card-subtitle mb-2 text-muted">Valor total dos serviços do mês: {{date('m')}}</p>
-                <h4 class="card-text mt-3 mb-3"><b>R$: </b>{{$valorMes}}</h4>
-                <a href="{{route('servico.index')}}" class="card-link btn btn-info btn-sm text-white">detalhe</a>
-            </div>
-        </div>
-        <div class="card bg-light" style="width: 23rem;">
-            <div class="card-header text-secondary"><h4>Receita Anual</h4></div>
-            <div class="card-body">
-                <p class="card-subtitle mb-2 text-muted">Valor total dos serviços</p>
-                <h4 class="card-text mt-3 mb-3"><b>R$: </b>{{$valorAno}}</h4>
-                <a href="{{route('servico.index')}}" class="card-link btn btn-info btn-sm text-white">detalhe</a>
-            </div>
-        </div>
-    </div>
+<h4 class="text-center text-dark mb-5">Dashboard <span class="material-icons">timeline</span></h4>
 
-    <div class="row col-10 offset-1 mt-5">
-        <div class="card bg-light mr-5" style="width:23rem;">
-            <div class="card-header text-secondary"><h4>Despesa mensal</h4></div>
-            <div class="card-body">
-                <p class="card-subtitle mb-2 text-muted">Valor total das despesas do mês: {{date('m')}}</p>
-                <h4 class="card-text mt-3 mb-3"><b>R$: </b> </h4>
-                <a href="{{route('servico.index')}}" class="card-link btn btn-success btn-sm text-white">detalhe</a>
+<div>
+    <div class="row ml-auto mr-auto">
+        <div class="col-4">
+            <div class="card shadow-sm mt-5 ml-3" style="height: 15rem; width:23rem;">
+                <div class="card-header bg-light text-dark"><h5>Receita mensal</h5></div>
+                <div class="card-body bg-light">
+                    <p class="card-subtitle mt-3 mb-2 text-muted">Valor total dos serviços do mês: {{date('m')}}</p>
+                    <h4 class="card-text mt-3 mb-3"><b>R$: </b>{{$valorMes}}</h4>
+                    <a href="{{route('servico.index')}}" class="card-link btn btn-outline-success btn-sm">serviços</a>
+                </div>
             </div>
         </div>
-        <div class="card bg-light" style="width: 23rem;">
-            <div class="card-header text-secondary"><h4>Despesa Anual</h4></div>
-            <div class="card-body">
-                <p class="card-subtitle mb-2 text-muted">Valor total das despesas</p>
-                <h4 class="card-text mt-3 mb-3"><b>R$: </b></h4>
-                <a href="{{route('servico.index')}}" class="card-link btn btn-success btn-sm text-white">detalhe</a>
-            </div>
+
+        <div class="col-8">
+            <h5 class=" text-center mb-4">Últimas receitas</h5>
+            <table class="table table-bordered shadow-sm">
+                <thead>
+                <tr class="text-center">
+                    <th>Descrição</th>
+                    <th>Pagamento</th>
+                    <th>Valor</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach($servicos as $servico)
+                    <tr>
+                        <td>{{$servico->descricao}}</td>
+                        <td>{{$servico->pagamento}}</td>
+                        <td>{{$servico->valor}}</td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

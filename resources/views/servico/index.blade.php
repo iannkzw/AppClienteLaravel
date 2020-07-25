@@ -2,10 +2,9 @@
 
 @section('content')
     <div class="">
-        <h2 class="text-center text-secondary mb-5">Painel de serviços <span class="material-icons">build</span></h2>
+        <h5 class="text-center text-dark mb-5">Painel de serviços <span class="material-icons">build</span></h5>
 
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10 offset-1">
                 <table class="table table-bordered">
                     <thead>
                     <tr class="text-center"  >
@@ -22,7 +21,7 @@
                             <td>{{$servico->pagamento}}</td>
                             <td>{{$servico->valor}}</td>
                             <td class="text-center">
-                                <a href="{{route('servico.editar', $servico->cliente->id)}}"><span class="material-icons">create</span></a>
+                                <a href="{{route('servico.editar', $servico->id)}}"><span class="material-icons">create</span></a>
                                 <a href="{{route('cliente.detalhe', $servico->cliente->id)}}" ><span class="material-icons">zoom_in</span></a>
                                 <a href="javascript:(confirm('Deletar registro?') ? window.location.href='{{route('servico.deletar', $servico->id)}}' : false)"><span class="material-icons">delete_forever</span></a>
                             </td>
@@ -31,7 +30,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+
         <div align="center" class="row">
             {{ $servicos->links() }}
         </div>

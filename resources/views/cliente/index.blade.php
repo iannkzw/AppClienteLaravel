@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class=".bg-dark">
-        <h2 class="text-center text-secondary mb-5">Painel de clientes <span class="material-icons">group</span></h2>
+    <div class=".bg-dark text-center">
+        <h5 class="text-center  mb-5">Painel de clientes <span class="material-icons">group</span></h5>
 
-        <div class="row">
-            <div class="col-md-12 ">
+            <div class="col-lg-10 offset-1 ">
                 <table class="table table-bordered">
                     <thead>
                     <tr class="text-center"  >
@@ -33,10 +32,10 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+
         <div align="center" class="row">
             {{ $clientes->links() }}
         </div>
-        <a href="{{route('cliente.adicionar')}}" class="btn btn-success">cadastrar cliente</a>
+        <a  href="{{route('cliente.adicionar')}}"  class="btn btn-success mt-3">cadastrar cliente</a>
     </div>
 @endsection

@@ -60,6 +60,6 @@ class ServicoController extends Controller
         $servico = \App\Servico::find($id);
         $servico->delete();
 
-        return redirect()->route('servico.detalhe', $servico->cliente->id);
+        return redirect()->route('servico.index');
     }
 }
