@@ -21,16 +21,16 @@
                     </div>
                     <div class="col-md-10 offset-1">
                         <div class="form-group">
+                            <label for="numero">Numero</label>
+                            <input type="text" class="form-control" placeholder="Número do imóvel" name="numero" required>
+                        </div>
+                    </div>
+                    <div class="col-md-10 offset-1">
+                        <div class="form-group">
                             <label for="bairro">Bairro</label>
                             <input type="text" class="form-control" placeholder="Nome do bairro" required name="bairro">
                         </div>
                     </div>
-                <div class="col-md-10 offset-1">
-                    <div class="form-group">
-                        <label for="numero">Numero</label>
-                        <input type="text" class="form-control" placeholder="Número do imóvel" name="numero" required>
-                    </div>
-                </div>
                 <div class="col-md-10 offset-1">
                     <div class="form-group">
                         <label for="telefone">Telefone</label>

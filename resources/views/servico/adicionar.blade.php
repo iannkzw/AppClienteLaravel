@@ -22,19 +22,19 @@
                 <div class="col-md-10 offset-1">
                     <div class="form-group">
                         <label for="valor">Valor do serviço</label>
-                        <input type="text" class="form-control" placeholder="Valor" required name="valor">
+                        <input type="number" class="form-control" placeholder="Valor" required name="valor">
                     </div>
                 </div>
                 <div class="col-md-10 offset-1">
                     <div class="form-group">
                         <label for="fechamentoServico">Data de contrato</label>
-                        <input type="text" class="form-control" placeholder="Ex: 00/00/00" name="fechamentoServico" required>
+                        <input type="date" class="form-control" placeholder="Ex: 00/00/00" name="fechamentoServico" required>
                     </div>
                 </div>
                 <div class="col-md-10 offset-1">
                     <div class="form-group">
                         <label for="entregaServico">Data de entrega</label>
-                        <input type="text" class="form-control" placeholder="Ex: 11/11/11" name="entregaServico" required>
+                        <input type="date" class="form-control" placeholder="Ex: 11/11/11" name="entregaServico" required>
                     </div>
                 </div>
                 <div class="text-center">

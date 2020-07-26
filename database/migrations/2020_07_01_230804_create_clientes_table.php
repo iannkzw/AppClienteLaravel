@@ -18,8 +18,8 @@ class CreateClientesTable extends Migration
             $table->string('nome');
             $table->string('rua');
             $table->string('bairro');
-            $table->string('numero');
-            $table->string('telefone');
+            $table->integer('numero');
+            $table->integer('telefone');
             $table->timestamps();
         });
     }

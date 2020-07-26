@@ -20,8 +20,8 @@ class CreateServicosTable extends Migration
             $table->string('descricao');
             $table->string('pagamento');
             $table->float('valor');
-            $table->string('fechamentoServico');
-            $table->string('entregaServico');
+            $table->date('fechamentoServico');
+            $table->date('entregaServico');
             $table->timestamps();
         });
     }

@@ -23,9 +23,9 @@
                             <td>{{$cliente->bairro}}</td>
                             <td>{{$cliente->numero}}</td>
                             <td class="text-center">
-                                <a href="{{route('cliente.editar', $cliente->id)}}"><span class="material-icons">create</span></a>
-                                <a href="{{route('cliente.detalhe', $cliente->id)}}" ><span class="material-icons">zoom_in</span></a>
-                                <a href="javascript:(confirm('Deletar registro?') ? window.location.href='{{route('cliente.deletar', $cliente->id)}}' : false)"><span class="material-icons">delete_forever</span></a>
+                                <a class="btn btn-sm btn-outline-info " href="{{route('cliente.editar', $cliente->id)}}">editar</a>
+                                <a class="btn btn-sm btn-outline-info" href="{{route('cliente.detalhe', $cliente->id)}}" >detalhe</a>
+                                <a class="btn btn-sm btn-outline-danger" href="javascript:(confirm('Deletar registro?') ? window.location.href='{{route('cliente.deletar', $cliente->id)}}' : false)">remover</a>
                             </td>
                         </tr>
                         @endforeach

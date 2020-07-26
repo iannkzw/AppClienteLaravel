@@ -28,11 +28,11 @@
                                     <td>{{$servico->descricao}}</td>
                                     <td>{{$servico->pagamento}}</td>
                                     <td>{{$servico->valor}}</td>
-                                    <td>{{$servico->fechamentoServico}}</td>
-                                    <td>{{$servico->entregaServico}}</td>
+                                    <td>{{\Carbon\Carbon::parse($servico->fechamentoServico)->format('d/m/Y')}}</td>
+                                    <td>{{\Carbon\Carbon::parse($servico->entregaServico)->format('d/m/Y')}}</td>
                                     <td>
-                                        <a href="{{route('servico.editar', $servico->cliente->id)}}" ><span class="material-icons">create</span></a>
-                                        <a href="javascript:(confirm('Deletar registro?') ? window.location.href='{{route('servico.deletar', $servico->id)}}' : false)"><span class="material-icons">delete_forever</span></a>
+                                        <a href="{{route('servico.editar', $servico->cliente->id)}}" class="btn btn-sm btn-outline-info">editar</a>
+                                        <a href="javascript:(confirm('Deletar registro?') ? window.location.href='{{route('servico.deletar', $servico->id)}}' : false)" class="btn btn-sm btn-outline-danger">remover</a>
                                     </td>
                                 </tr>
                             @endforeach
