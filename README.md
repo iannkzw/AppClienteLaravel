@@ -1,11 +1,11 @@
- <h1>AppClient</h1>
-    <p>O AppClient é uma soluçao desenvolvida para facilitar o gerenciamento de clientes e serviços prestados por micro-empresas.
+ <h1>AppCliente</h1>
+    <p>O AppCliente é uma soluçao desenvolvida para facilitar o gerenciamento de clientes e serviços prestados por micro-empresas.
     <p>Por meio de um sistema simples e seguro é possível realizar o cadastro contendo todas as informações de seu cliente e do(s) serviço(s) à ele prestado. 
     Sendo assim, você tem uma base de dados online para a gestão e acompanhamento de seu negócio.
     </p>
     <h2>Manual de utilização do software</h2>
     <h3>1. Acessando o software</h3>
-    <p>Utilizando o navegador acesse o endereço do seu sistema.Exemplo: www.appclient.com</p>
+    <p>Utilizando o navegador acesse o endereço do seu sistema.Exemplo: www.appcliente.com</p>
     <h3>1.2 Autenticação de usuário</h3>
     <p>Ao acessar o sistema você será redirecionado a página de login onde fará a autenticação de usuário.</p>
     <p>Informe o e-mail e a senha fornecidos pela nossa empresa para realizar o acesso.</p>
