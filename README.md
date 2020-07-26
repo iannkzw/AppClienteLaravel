@@ -1,1 +1,0 @@
-<h1> AppCliente - Manual </h1>
