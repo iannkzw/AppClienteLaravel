@@ -57,5 +57,4 @@
     <p>Dirija-se à página de detalhe do cliente desejado e clique na opção <b>remover</b>, da coluna <b>ações</b>, na linha do serviço desejado e confirme a mensagem de 
     exclusão de serviço.</p>
     <hr>
-    <a href="https://github.com/iannkzw/AppClienteLaravel/blob/master/DIAGRAMA_BD.pdf">Diagrama</a>
-    <a href="https://www.youtube.com/watch?v=3YcqqTO9keA&feature=youtu.be">Video do sistema</a>
+    <a href="https://github.com/iannkzw/AppClienteLaravel/blob/master/DIAGRAMA_BD.pdf">Diagrama</a> / <a href="https://www.youtube.com/watch?v=3YcqqTO9keA&feature=youtu.be">Video do sistema</a>
