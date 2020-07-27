@@ -58,3 +58,4 @@
     exclusão de serviço.</p>
     <hr>
     <a href="https://github.com/iannkzw/AppClienteLaravel/blob/master/DIAGRAMA_BD.pdf">Diagrama</a>
+    <a href="https://www.youtube.com/watch?v=3YcqqTO9keA&feature=youtu.be">Video do sistema</a>
