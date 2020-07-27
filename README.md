@@ -15,7 +15,7 @@
     <p>Após efetuar o login você será redirecionado a sua Dashboard onde será informado o valor total de suas receitas do mês atual e uma tabela contendo as últimas
     receitas cadastradas no sistema.</p>
     <h3>3. Clientes</h3>
-    <p>Acessando: na parte superior de seu sistema acesse a barra de navegação clicando na opção <b>clientes</b>. Você será redirecionado à página princial de clientes 
+    <p>Acessando: na parte superior de seu sistema acesse a barra de navegação clicando na opção <b>clientes</b>. Você será redirecionado à página principal de clientes 
     onde é retornado toda sua base de clientes cadastrados em forma de uma tabela e um botão para o cadastro de cliente.</p>
     <img src="img/btn.png"> 
     <h3>3.1 Cadastro</h3>
